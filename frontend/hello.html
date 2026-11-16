@@ -1,0 +1,30 @@
+New branch is created.
+
+cd backend
+python -m venv venv
+source venv/bin/activate      # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn main:app --reload
+
+
+git remote -v   
+git remote set-url origin <github repo link>
+
+git remote -v 
+git branch -M main
+
+git remote add origin <github repo link>
+
+git push -u origin main (it may ask you to auth with GitHub (authenticate that) )
+
+
+
+Branch :
+
+git branch		List branches
+git branch frontend	Create branch
+git switch frontend	Switch branch
+git push -u origin frontend	Upload new branch
+git pull origin main	Pull main branch
+git merge frontend	Merge frontend into current branch
+git branch -d frontend	Delete local branch
